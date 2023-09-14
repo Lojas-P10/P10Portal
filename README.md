@@ -1,10 +1,10 @@
 <div align="center">
   
-  [![Latest release](https://img.shields.io/github/v/release/horodeski/TemplateDocumentacao?label=Latest%20release&style=social)](https://github.com/horodeski/TemplateDocumentacao/releases/tag/v1.0.0)
-  [![GitHub commits](https://img.shields.io/github/commits-since/horodeski/TemplateDocumentacao/v1.0.0.svg?style=social)](https://github.com/horodeski/TemplateDocumentacao/commit/)
-  [![Stars](https://img.shields.io/github/stars/horodeski/TemplateDocumentacao?style=social)](https://github.com/horodeski/TemplateDocumentacao/stargazers)
-  [![Fork](https://img.shields.io/github/forks/horodeski/TemplateDocumentacao?style=social)](https://github.com/horodeski/TemplateDocumentacao/network/members)
-  [![Watchers](https://img.shields.io/github/watchers/horodeski/TemplateDocumentacao?style=social)](hthttps://github.com/horodeski/TemplateDocumentacao/watchers)
+  [![Latest release](https://img.shields.io/github/v/release/horodeski/RedesDoAdamo?label=Latest%20release&style=social)](https://github.com/horodeski/RedesDoAdamo/releases/tag/v1.0.0)
+  [![GitHub commits](https://img.shields.io/github/commits-since/horodeski/RedesDoAdamo/v1.0.0.svg?style=social)](https://github.com/horodeski/RedesDoAdamo/commit/)
+  [![Stars](https://img.shields.io/github/stars/horodeski/RedesDoAdamo?style=social)](https://github.com/horodeski/RedesDoAdamo/stargazers)
+  [![Fork](https://img.shields.io/github/forks/horodeski/RedesDoAdamo?style=social)](https://github.com/horodeski/RedesDoAdamo/network/members)
+  [![Watchers](https://img.shields.io/github/watchers/horodeski/RedesDoAdamo?style=social)](hthttps://github.com/horodeski/RedesDoAdamo/watchers)
   
 </div>
 
