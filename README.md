@@ -1,7 +1,6 @@
 <div align="center">
   
-  [![Latest release](https://img.shields.io/github/v/release/horodeski/RedesDoAdamo?label=Latest%20release&style=social)](https://github.com/horodeski/RedesDoAdamo/releases/tag/v1.0.0)
-  [![GitHub commits](https://img.shields.io/github/commits-since/horodeski/RedesDoAdamo/v1.0.0.svg?style=social)](https://github.com/horodeski/RedesDoAdamo/commit/)
+  [![GitHub commits](https://img.shields.io/github/commits-since/horodeski/RedesDoAdamo/v1.0.0.svg?style=social)](https://github.com/horodeski/RedesDoAdamo/commits/main)
   [![Stars](https://img.shields.io/github/stars/horodeski/RedesDoAdamo?style=social)](https://github.com/horodeski/RedesDoAdamo/stargazers)
   [![Fork](https://img.shields.io/github/forks/horodeski/RedesDoAdamo?style=social)](https://github.com/horodeski/RedesDoAdamo/network/members)
   [![Watchers](https://img.shields.io/github/watchers/horodeski/RedesDoAdamo?style=social)](hthttps://github.com/horodeski/RedesDoAdamo/watchers)
