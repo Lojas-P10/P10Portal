@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #000000;
+}
+
+.fundo {
+    width: 100%;
+    background-color: #000000a1;
+    font-weight: 800;
+    color: white;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divBonita {
+    background: url(/img/ezgif-2-1c96fe7648.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+.cada-passo {
+    display: flex;
+}
+
+.passos {
+    display: flex;
+    margin: 16px 0;
+}
+
+.tutorial {
+    width: 85%;
+    color: white;
+    padding: 34px;
+    margin: 40px auto;
+    border-radius: 15px;
+    display: flex;
+    border: 5px solid #00c3ff;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #000000;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 7px solid #00c3ff;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+span {
+    font-weight: bolder;
+    color: #00c3ff;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.content div {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#logo-responsiva {
+    display: none;
+}
+
+.fundo {
+    width: 100%;
+    background-color: #00000086;
+    color: rgb(255, 255, 255);
+    height: 85vh;
+    padding-left: 67px;
+    border-bottom: 45px solid #00c3ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fundo h3 {
+    font-size: 2em;
+}
+
+.fundo h2 {
+    font-size: 3em;
+    margin-bottom: 18px;
+}
+
+.fundo p {
+    margin-top: 10px;
+}
+
+header img {
+    height: 10vh;
+    border-radius: 50%;
+    border: 5px solid #6938ca;
+}
+
+button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#comecar a {
+    color: rgb(0, 0, 0);
+}
+
+button a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+button a:visited {
+    color: rgb(255, 255, 255);
+
+}
+
+.glow-on-hover {
+    font-family: 'Open Sans', sans-serif;
+    width: 259px;
+    height: 61px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.passos h2 {
+    font-size: 2em;
+}
+
+.passos h2 {
+    font-weight: bold;
+    color: #00c3ff;
+    font-size: 3em;
+    margin: 10px;
+}
+
+.termos h1, .tutorial h1 {
+    font-size: 2em;
+}
+
+.termos h1 {
+    color: #00c3ff;
+}
+
+.passos span {
+    font-size: 1.5em;
+}
+
+.termo-flex {
+    display: flex;
+}
+
+.termo-parte {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.termo-parte h2 {
+    margin-top: 15px;
+}
+
+.termos {
+    color: white;
+    padding: 50px;
+    display: flex;
+    border-top: 5px solid #00c3ff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-gremio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.div-gremio h5 {
+    font-size: 1em;
+}
+
+.gremio {
+    width: 90px;
+    margin-top: 5px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #4f8dff, #8ea9df, #5b8bf2, #4d76dd, #436ff5, #2cc0c5, #0080ff, #4393e4, #318CE7);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: rgb(0, 0, 0)
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #ffffff;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer div p {
+    animation: pulse 5s infinite;
+    font-weight: 600;
+}
+
+@keyframes pulse {
+    0% {
+        color: #0080ff;
+    }
+    50%{
+        color: #00c3ff;
+    }
+    75% {
+        color: #63adf7;
+    }    
+    100% {
+        color: #0080ff;
+    }
+    
+}
+
+.github img {
+    width: 48px;
+    margin: 0 12px;
+    font-size: 1.5em
+}
+
+.github {
+    display: flex;
+    align-items: center;
+}
+
+.github a {
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#comecar:after {
+    background: rgb(255, 255, 255);
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 920px) {
+    .passos {
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .termo-flex {
+        flex-direction: column;
+    }
+
+    .termo-parte {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cada-passo {
+        margin: 5px 0;
+    }
+
+    .fundo {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .fundo h3 {
+        font-size: 1.3em;
+        text-align: center;
+
+    }
+
+    .fundo h2 {
+        font-size: 2em;
+        text-align: center;
+
+    }
+
+    .fundo p {
+        font-size: 0.8em;
+        text-align: center;
+        width: 81%;
+    }
+
+    .glow-on-hover {
+        width: 215px;
+        height: 51px;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #logo-responsiva {
+        display: block;
+    }
+
+    #logo-responsiva-meio {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ul {
+        z-index: 5;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        background: rgb(15, 15, 15);
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+}
+
+@media (max-width: 370px) {
+    .termos {
+        display: block;
+        padding: 20px;
+    }
+
+    .passos h2 {
+        display: none;
+    }
+
+    .fundo h3 {
+        font-size: 1.2em;
+    }
+
+    .fundo p {
+        font-size: 0.5em;
+    }
+
+    .fundo h2, .tutorial h1 {
+        font-size: 1.8em;
+    }
+    .tutorial {
+        padding: 22px;
+    }
+
+}
