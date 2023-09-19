@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background-color: #000000;
+    background-color: #0C0D09;
 }
 
 .fundo {
@@ -17,18 +17,19 @@ body {
     background-color: #000000a1;
     font-weight: 800;
     color: white;
-    height: 85vh;
+    height: 100vh;
+    padding-left: 67px;
     display: flex;
+    border-bottom: 45px solid #4F732C;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.divBonita {
-    background: url(/img/ezgif-2-1c96fe7648.gif) no-repeat;
+.divBonita {    
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    height: 100vh;
 }
 
 .cada-passo {
@@ -47,7 +48,7 @@ body {
     margin: 40px auto;
     border-radius: 15px;
     display: flex;
-    border: 5px solid #00c3ff;
+    border: 5px solid #4F732C;
     flex-direction: column;
     align-items: center;
 }
@@ -67,7 +68,9 @@ nav .logo {
     font-weight: bold;
     line-height: 17px;
 }
-
+#logo-responsiva-meio {
+    margin-right: 10em;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -92,7 +95,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
     color: rgb(255, 255, 255);
-    border-bottom: 7px solid #00c3ff;
+    border-bottom: 7px solid #4F732C;
     padding-bottom: 20px;
 }
 
@@ -102,7 +105,7 @@ h1 {
 
 span {
     font-weight: bolder;
-    color: #00c3ff;
+    color: #4F732C;
 }
 
 nav .menu-btn i {
@@ -136,18 +139,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-.fundo {
-    width: 100%;
-    background-color: #00000086;
-    color: rgb(255, 255, 255);
-    height: 85vh;
-    padding-left: 67px;
-    border-bottom: 45px solid #00c3ff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-}
+
 
 .fundo h3 {
     font-size: 2em;
@@ -209,7 +201,7 @@ button a:visited {
 
 .passos h2 {
     font-weight: bold;
-    color: #00c3ff;
+    color: #4F732C;
     font-size: 3em;
     margin: 10px;
 }
@@ -219,7 +211,7 @@ button a:visited {
 }
 
 .termos h1 {
-    color: #00c3ff;
+    color: #4F732C;
 }
 
 .passos span {
@@ -243,7 +235,7 @@ button a:visited {
     color: white;
     padding: 50px;
     display: flex;
-    border-top: 5px solid #00c3ff;
+    border-top: 5px solid #4F732C;
     flex-direction: column;
     align-items: center;
 }
@@ -325,7 +317,7 @@ footer div p {
         color: #0080ff;
     }
     50%{
-        color: #00c3ff;
+        color: #4F732C;
     }
     75% {
         color: #63adf7;
@@ -442,6 +434,7 @@ footer div p {
 
     #logo-responsiva-meio {
         display: none;
+
     }
 
     nav {
