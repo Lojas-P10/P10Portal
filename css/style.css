@@ -26,7 +26,7 @@ body {
     align-items: flex-start;
 }
 
-.divBonita {    
+.divBonita {
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -68,9 +68,11 @@ nav .logo {
     font-weight: bold;
     line-height: 17px;
 }
+
 #logo-responsiva-meio {
     margin-right: 10em;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -298,6 +300,39 @@ button a:visited {
 }
 
 footer {
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    width: 100%;
+    padding: 2em;
+}
+footer h1 {
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* footer .links {
+    display: flex;
+    flex-direction: column;
+} */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.teste {
+    background-color: white;
+}
+/* footer {
     background-color: #ffffff;
     height: 30vh;
     width: 100%;
@@ -310,22 +345,25 @@ footer {
 footer div p {
     animation: pulse 5s infinite;
     font-weight: 600;
-}
+} */
 
 @keyframes pulse {
     0% {
         color: #0080ff;
     }
-    50%{
+
+    50% {
         color: #4F732C;
     }
+
     75% {
         color: #63adf7;
-    }    
+    }
+
     100% {
         color: #0080ff;
     }
-    
+
 }
 
 .github img {
@@ -378,11 +416,13 @@ footer div p {
     .passos {
         flex-wrap: wrap;
     }
-    footer{
+
+    footer {
         flex-direction: column;
         padding: 20px;
         text-align: center;
     }
+
     .termo-flex {
         flex-direction: column;
     }
@@ -508,6 +548,7 @@ footer div p {
     .fundo h2, .tutorial h1 {
         font-size: 1.8em;
     }
+
     .tutorial {
         padding: 22px;
     }
