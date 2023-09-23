@@ -96,9 +96,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: rgb(255, 255, 255);
-    border-bottom: 7px solid #4F732C;
-    padding-bottom: 20px;
+    color: #4F732C;
 }
 
 h1 {
