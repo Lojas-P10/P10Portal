@@ -27,6 +27,7 @@ body {
 }
 
 .divBonita {
+    background: url(/img/lavoisier.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -55,14 +56,18 @@ body {
 
 nav {
     display: flex;
+    padding: 0 4em;
     height: 80px;
     width: 100%;
-    background: #000000;
+    background: #fff;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
-
+nav h1 {
+    color: black;
+    font-size: 1.7em;
+}
 nav .logo {
     color: #fff;
     font-weight: bold;
@@ -85,10 +90,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f2f2f2;
+    color: #0f0f0f;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 500;   
     padding: 8px 15px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
@@ -142,12 +147,12 @@ input[type="checkbox"] {
 
 
 .fundo h3 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .fundo h2 {
-    font-size: 3em;
-    margin-bottom: 18px;
+    font-size: 5em;
+    background-color: #f44215
 }
 
 .fundo p {
