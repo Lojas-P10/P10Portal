@@ -197,6 +197,33 @@ button a:visited {
     border-radius: 10px;
 }
 
+.search-container {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input {
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    padding: 0.6em;
+    width: 100%;
+}
+
+footer button {
+    background-color: #4F732C;
+    border-radius: 10px;
+    color: white;
+    padding: 0.6em 1em;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+}
+
 .passos h2 {
     font-size: 2em;
 }
@@ -300,116 +327,61 @@ button a:visited {
 }
 
 footer {
-    position: absolute;
-    bottom: 0%;
     background-color: black;
     width: 100%;
-    padding: 2em;
-}
-footer h1 {
+    padding: 5em 2em;
+    gap: 5em;
     color: white;
+    justify-content: center;
 }
+
 footer a {
     color: white;
     text-decoration: none;
+    width: fit-content;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
 
-/* footer .links {
-    display: flex;
-    flex-direction: column;
-} */
+footer .logo {
+    margin-bottom: 1em
+}
+
+footer .contato {
+    width: 30em
+}
+
+footer .contato-container {
+    gap: 0.5em;
+}
+
+footer .row {
+    gap: 5em;
+}
+
+footer h3 {
+    color: #4F732C
+}
+
+footer .links {
+    align-items: flex-start;
+}
+
 .column {
     display: flex;
     flex-direction: column;
 }
+
 .row {
     display: flex;
     flex-direction: row;
 }
+
 .teste {
     background-color: white;
 }
-/* footer {
-    background-color: #ffffff;
-    height: 30vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0;
-}
-
-footer div p {
-    animation: pulse 5s infinite;
-    font-weight: 600;
-} */
-
-@keyframes pulse {
-    0% {
-        color: #0080ff;
-    }
-
-    50% {
-        color: #4F732C;
-    }
-
-    75% {
-        color: #63adf7;
-    }
-
-    100% {
-        color: #0080ff;
-    }
-
-}
-
-.github img {
-    width: 48px;
-    margin: 0 12px;
-    font-size: 1.5em
-}
-
-.github {
-    display: flex;
-    align-items: center;
-}
-
-.github a {
-    color: #000000;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-#comecar:after {
-    background: rgb(255, 255, 255);
-}
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 920px) {
