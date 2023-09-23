@@ -1,50 +1,24 @@
-<div align="center">
-  
-  [![GitHub commits](https://img.shields.io/github/commits-since/horodeski/RedesDoAdamo/v1.0.0.svg?style=social)](https://github.com/horodeski/RedesDoAdamo/commits/main)
-  [![Stars](https://img.shields.io/github/stars/horodeski/RedesDoAdamo?style=social)](https://github.com/horodeski/RedesDoAdamo/stargazers)
-  [![Fork](https://img.shields.io/github/forks/horodeski/RedesDoAdamo?style=social)](https://github.com/horodeski/RedesDoAdamo/network/members)
-  [![Watchers](https://img.shields.io/github/watchers/horodeski/RedesDoAdamo?style=social)](hthttps://github.com/horodeski/RedesDoAdamo/watchers)
-  
-</div>
-
-
-<a name="readme-top"></a>
-<div align="center">
-  <a href="https://github.com/horodeski/HumildeTentativaDeFazerUmPortfolio">
-    <!-- logo se tiver 
-    <img src="src/assets/img/logo.png" alt="Logo" width="200" height="200">
--->
-  </a>
-
   <h2 align="center">Redes do Adamô</h2>
 
   <p align="center">
     <i>"Os peixes mais insanos de Araquari" - Adamô dal Berto, 2023 </i>
     <br />
-    <a href="https://github.com/horodeski/TemplateDocumentacao"><strong>Ver site »</strong></a>
+    <a href="https://github.com/horodeski/"><strong>Ver site »</strong></a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Sumário</summary>
   <ol>
     <li>
-      <a href="#sobre-o-projeto">Sobre o projeto</a>
-      <ul>
-        <li><a href="#nele-você-pode-encontrar">Nele você pode encontrar</a></li>
-        <li><a href="#uso">Uso</a></li>
-        <li><a href="#ver-telas">Ver telas</a></li>
-      </ul>
+      <a href="#breve-descricao">Breve Descriçãp</a>
     </li>
     <li>
-      <a href="#começando-o-projeto">Começando o projeto</a>
-      <ul>
-        <li><a href="#pré-requisitos">Pré-requisitos</a></li>
-        <li><a href="#instalação">Instalação</a></li>
-      </ul>
+      <a href="#sobre-o-projeto">Sobre o projeto</a>
+    </li>
+    <li>
+      <a href="#nele-você-pode-encontrar">Nele você pode encontrar</a>
     </li>
     <li><a href="#contato">Contato</a></li>
   </ol>
@@ -52,73 +26,49 @@
 
 <hr>
 
-<!-- ABOUT THE PROJECT -->
-### Sobre o projeto
+### Breve Descrição
+
 Redes do Adamô é uma empresa de pesca dedicada a oferecer soluções de alta qualidade para pescadores e entusiastas da pesca. Fundada por Adamô, um pescador apaixonado com décadas de experiência no ramo, a empresa tem como objetivo principal fornecer uma ampla gama de produtos e serviços relacionados à pesca.
 
+### Sobre o projeto
 
-    
-#### Nele você pode encontrar:
-* Lorem ipsum dolor sit amet
-* Unde eveniet
-* Aut quas ipsum et sint amet
-* Et provident quidem est omnis
+Este é um projeto desenvolvido para a matéria "Redes de computadores" em 2023, visando cumprir os seguintes requisitos:
 
+- `Reforçar Habilidades em HTML`: Os alunos devem aprender a criar páginas HTML bem estruturadas e semanticamente corretas para cada seção do portal.
 
+- `Dominar o uso de CSS`: Os alunos devem adquirir conhecimentos avançados em CSS para estilizar o portal, tornando-o visualmente atraente e profissional.
 
-#### Uso:
-Uma breve explicação de como funciona a aplicação. Lorem ipsum dolor sit amet. Sit similique iure et necessitatibus similique et perspiciatis nesciunt ea velit voluptas et doloremque numquam. Et culpa autem eos velit sunt ut molestiae dolorem non aperiam aliquid est quasi excepturi eum nemo minima a consequatur illo?
+- `Integração de Imagens`: Os alunos devem aprender a incorporar imagens de forma eficaz e apropriada nas páginas do portal, considerando a qualidade, tamanho e relevância das imagens.
 
-Et suscipit impedit qui voluptate nihil aut rerum culpa? Ut autem sunt ab vero dolor et blanditiis sunt et culpa laborum qui quae voluptas. Et nobis temporibus et iusto consectetur ut cumque architecto.
+- `Utilização do Google Maps`: Os alunos devem ser capazes de integrar o Google Maps ao portal, incluindo a localização da empresa e a funcionalidade de direções.
+
+- `Princípios de Design Responsivo`: Os alunos devem compreender os princípios de design responsivo e aplicá-los para garantir que o portal seja acessível e funcione bem em diferentes dispositivos e tamanhos de tela.
+
+- `Precisão e Relevância do Conteúdo`: Os alunos devem se concentrar em fornecer informações precisas e relevantes em cada seção do portal, garantindo que o conteúdo seja informativo e envolvente.
+
+- `Resolução de Problemas`: Os alunos devem desenvolver habilidades de solução de problemas, identificando e corrigindo erros no código HTML e CSS, caso ocorram.
+
+### Nele você pode encontrar:
+
+- `Sobre a Empresa`: Seção que fornece informações detalhadas sobre a empresa, sua história, missão e valores.
+
+- `Serviços/Produtos`: Seção que descreve os serviços ou produtos oferecidos pela empresa. Inclua detalhes relevantes e imagens se aplicável.
+
+- `localização`: Seção com o Google Maps para mostrar uma pseudo localização da empresa. Os visitantes devem ser capazes de visualizar o endereço da empresa e obter direções.
+
+- `Fale Conosco`: Uma seção com informações de contato, como endereço de e-mail e formulário de contato, para que os visitantes possam se comunicar com a empresa.
+
+- `Perguntas Mais Frequentes (FAQ)`: Uma seção de Perguntas Mais Frequentes que responda às dúvidas comuns dos clientes sobre a empresa e seus serviços/produtos.
 
 <details>
   <summary name="ver-telas">Ver telas</summary>
-    <img src="screenshot.png" />
+    <i>em breve!</i>
 </details>
 
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-### Começando o projeto
-
-#### Pré-requisitos
-Ter o NPM instalado
-
-* NPM
-  ```sh
-  npm install npm@latest -g
-  ```
-
-#### Instalação
-
-
-* Clone o repositório
-   ```sh
-   git clone https://github.com/horodeski/HumildeTentativaDeFazerUmPortfolio
-   ```
-
-* Instale as dependências
-  ```sh
-  npm install
-  ```
-
-* Inicie o servidor de desenvolvimento
-
-  ```sh
-  npm run dev
-  ```
-
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
-<!-- CONTACT -->
 ### Contato
 
-Geovana Sophia Horodeski - [@_horodeski](https://twitter.com/_horodeski) - geovana.horodeski06@gmail.com
-Marcelo Harbs - [@_horodeski](https://twitter.com/Harbs_lo) - marceloHarbs@gmail.com
+Geovana Sophia Horodeski - [@\_horodeski](https://twitter.com/_horodeski) - geovana.horodeski06@gmail.com
 
-Link do projeto: [https://github.com/horodeski/TemplateDocumentacao](https://github.com/horodeski/TemplateDocumentacao)
+Marcelo Harbs - [@\_horodeski](https://twitter.com/Harbs_lo) - marceloHarbs@gmail.com
 
-
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
+<!-- Link do projeto: [https://github.com/horodeski/TemplateDocumentacao](https://github.com/horodeski/TemplateDocumentacao) -->
