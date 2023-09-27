@@ -1,15 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 body {
     height: 100vh;
     background-color: #0C0D09;
+}
+
+.hero {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.diagonal-hero-bg {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
 .fundo {
@@ -26,8 +41,12 @@ body {
     align-items: flex-start;
 }
 
+.fundo img {
+    filter: brightness(0.7);
+}
+
 .divBonita {
-    background: url(/img/lavoisier.jpg) no-repeat;
+    background: url(../img/lavoisier.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -60,14 +79,18 @@ nav {
     height: 80px;
     width: 100%;
     background: #fff;
+    z-index: 99;
     align-items: center;
+    position: fixed;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 nav h1 {
     color: black;
     font-size: 1.7em;
 }
+
 nav .logo {
     color: #fff;
     font-weight: bold;
@@ -93,7 +116,7 @@ nav ul li a {
     color: #0f0f0f;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;   
+    font-weight: 500;
     padding: 8px 15px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
@@ -148,6 +171,7 @@ input[type="checkbox"] {
 
 .fundo h3 {
     font-size: 3em;
+    width: 69%;
 }
 
 .fundo h2 {
@@ -238,7 +262,8 @@ footer button {
     margin: 10px;
 }
 
-.termos h1, .tutorial h1 {
+.termos h1,
+.tutorial h1 {
     font-size: 2em;
 }
 
@@ -520,7 +545,8 @@ footer .links {
         font-size: 0.5em;
     }
 
-    .fundo h2, .tutorial h1 {
+    .fundo h2,
+    .tutorial h1 {
         font-size: 1.8em;
     }
 
