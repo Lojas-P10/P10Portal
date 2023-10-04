@@ -44,7 +44,15 @@ body {
     transform: translate(-30%, -30%);
     border-radius: 50%;
 }
-
+.bx-mouse {
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    filter: drop-shadow(5px 5px 5px #4F732C);
+    font-size: 3em;
+/*     box-shadow: 0 0 20px #4F732C, 0 0 60px #4F732C, 0 0 100px #4F732C;
+ */
+}
 .diagonal-hero-bg {
     width: 100%;
     height: 100%;
@@ -57,15 +65,22 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+.center {
+    position: absolute;
+    left: 33%;
+}
 .diagonal-hero-bg img {
     width: 27em
 }
-
+nav .bx {
+    font-size: 2em;
+}
 .diagonal-hero-bg h2 {
     font-size: 5em
 }
-
+.diagonal-hero-bg h3 {
+    font-size: 3em
+}
 .fundo {
     width: 100%;
     background-color: #000000a1;

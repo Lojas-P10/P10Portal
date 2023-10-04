@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link ref="script.js">
     <title>BETFREG</title>
@@ -29,11 +30,19 @@
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
         </label>
-        <ul>
+        <ul class="center">
             <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Serviços</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Localização</a></li>
         </ul>
+        <ul>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        </ul>
+
     </nav>
     <main>
         <div class="hero">
@@ -42,7 +51,7 @@
                 <div>
                     <h2>Pescaria de alta velocidade</h2>
                     <h3>agora em fibra ótica!</h3>
-
+                    <i class='bx bx-mouse bx-fade-down'></i>
                 </div>
              </div>
           </div>
@@ -235,7 +244,8 @@
             </div>
           </div>    
         </footer>
-        <div class="cursor"></div>
+        <div class="cursor small"></div>
+        <div class="cursor big"><div>
     <script type="text/javascript"> 
     const cursor = document.querySelector(".cursor"); 
     var timeout; 
