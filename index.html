@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link ref="script.js">
     <title>BETFREG</title>
 </head>
 
 <body>
+    <script src="./script.js"></script>
+
     <nav>
         <div id="logo-responsiva" class="logo">
             <h1>
@@ -35,8 +38,12 @@
     <main>
         <div class="hero">
             <div class="diagonal-hero-bg">
-                <h3>Pescaria de alta velocidade</h3>
-                <h3>agora em fibra ótica!</h3>
+                <img src="./img/zyro-image.png" alt="">
+                <div>
+                    <h2>Pescaria de alta velocidade</h2>
+                    <h3>agora em fibra ótica!</h3>
+
+                </div>
              </div>
           </div>
         <section class="tutorial">
@@ -227,7 +234,23 @@
               </div>
             </div>
           </div>    
-    </footer>
-</body>
+        </footer>
+        <div class="cursor"></div>
+    <script type="text/javascript"> 
+    const cursor = document.querySelector(".cursor"); 
+    var timeout; 
+    document.addEventListener("mousemove", (e) => { 
+        let x = e.pageX; 
+        let y = e.pageY; 
+        cursor.style.top = y + "px";
+         cursor.style.left = x + "px"; 
+         cursor.style.display = "block"; 
+         function mouseStopped(){ 
+            cursor.style.display = "none";
+             } 
+             clearTimeout(timeout); 
+             timeout = setTimeout(mouseStopped, 1000);
+              }); 
+               document.addEventListener("mouseout", () => { cursor.style.display = "none"; }); </script> </body>
 
 </html>
