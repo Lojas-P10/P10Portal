@@ -1,15 +1,9 @@
-const cursorSmall = document.querySelector('.small');
-const cursorBig = document.querySelector('.big');
+const nav = document.querySelector('nav');
 
-
-const positionElement = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-   
-  cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-  
-  cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
- 
-}
-
-window.addEventListener('mousemove', positionElement)
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    nav.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.2)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
