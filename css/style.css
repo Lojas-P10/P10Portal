@@ -42,20 +42,14 @@ body {
 }
 
 .square:nth-child(2) {
-    clip-path: polygon(100px 0px, 69.63% 107px, 100% 100%, 173px 141.65%);
-    top: 74%;
-    left: -9%;
-    width: 80%;
+    clip-path: polygon(0px 0px, 69.50% 5px, 10.5% 22.68%, 0px 89%);
 }
 
 .square:nth-child(3) {
-    clip-path: polygon(100px 0px, 69.63% 107px, 100% 100%, 173px 141.65%);
-    top: 204%;
-    right: -9%;
+
 }
-.square:nth-child(4) {
-    clip-path: polygon(0px 0px, 69.50% 5px, 10.5% 22.68%, 0px 89%);
-}
+
+
 .hero {
     display: inline-block;
     width: 100%;
@@ -63,15 +57,17 @@ body {
     padding: 0;
     position: relative;
 }
+
 .diagonal-hero-bg button {
     background-color: #4f732c;
-  padding: 1em 2em;
-  border-radius: 27px;
-  border: none;
-  color: white;
-  font-weight: bold;
-  margin-top: 2em;
+    padding: 1em 2em;
+    border-radius: 27px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 2em;
 }
+
 body {
     height: 100vh;
 
@@ -116,19 +112,22 @@ body {
 
 section {
     padding: 8em 10em;
+    background-color: #d8dfd4;
 }
 
 .sobre-nos h2, .sobre-nos p {
-    color: white;
+    color: #333;
+    width: 49%;
 }
 
 .sobre-nos {
     display: flex;
-    flex-direction: column;
     gap: 2em;
-    background-color: #d8dfd4;
 }
 
+.sobre-nos img{
+    width: 44em;
+}
 .diagonal-hero-bg {
     width: 100%;
     height: 100%;
@@ -221,9 +220,10 @@ nav {
     align-items: center;
     position: fixed;
     transition: box-shadow 0.3s;
+    transition: background 0.3s;
     flex-wrap: wrap;
     justify-content: space-between;
-  
+
 }
 
 nav h1 {
