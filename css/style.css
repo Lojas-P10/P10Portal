@@ -11,7 +11,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(90deg, #0d0d0d, #031709);
+    /*     background: linear-gradient(90deg, #0d0d0d, #031709); */
 
 }
 
@@ -26,7 +26,36 @@ body {
     color: #fff;
 }
 
+.square {
+    width: 50em;
+    height: 31vh;
+    position: absolute;
+    background-color: #d8dfd4;
+    z-index: 99;
+    border-radius: 10px;
+}
 
+.square:nth-child(1) {
+    right: 0%;
+    top: -10%;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 210px 78.33%);
+}
+
+.square:nth-child(2) {
+    clip-path: polygon(100px 0px, 69.63% 107px, 100% 100%, 173px 141.65%);
+    top: 74%;
+    left: -9%;
+    width: 80%;
+}
+
+.square:nth-child(3) {
+    clip-path: polygon(100px 0px, 69.63% 107px, 100% 100%, 173px 141.65%);
+    top: 204%;
+    right: -9%;
+}
+.square:nth-child(4) {
+    clip-path: polygon(0px 0px, 69.50% 5px, 10.5% 22.68%, 0px 89%);
+}
 .hero {
     display: inline-block;
     width: 100%;
@@ -34,7 +63,15 @@ body {
     padding: 0;
     position: relative;
 }
-
+.diagonal-hero-bg button {
+    background-color: #4f732c;
+  padding: 1em 2em;
+  border-radius: 27px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 2em;
+}
 body {
     height: 100vh;
 
@@ -89,6 +126,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    background-color: #d8dfd4;
 }
 
 .diagonal-hero-bg {
@@ -178,13 +216,14 @@ nav {
     padding: 0 4em;
     height: 80px;
     width: 100%;
-    background: #fff;
-    z-index: 99;
+    background: #fff0;
+    z-index: 100;
     align-items: center;
     position: fixed;
     transition: box-shadow 0.3s;
     flex-wrap: wrap;
     justify-content: space-between;
+  
 }
 
 nav h1 {
@@ -198,9 +237,6 @@ nav .logo {
     line-height: 17px;
 }
 
-#logo-responsiva-meio {
-    margin-right: 10em;
-}
 
 nav ul {
     display: flex;
