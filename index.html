@@ -1,390 +1,305 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-            rel='stylesheet'>
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link ref="script.js">
-        <title>LOJAS P10</title>
-    </head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link ref="script.js" />
+    <title>LOJAS P10</title>
+  </head>
 
-    <body>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="./assets/img/logo/LojasP10/logo-menor.png"
+        alt=""
+      />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="center">
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Promoções</a></li>
+        <li><a href="#">Nosso app</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Localização</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <img class="cell-phone" src="./assets/img/cell.png" alt />
+      <section class="hero">
+        <div class="square"></div>
+        <div class="diagonal-hero-bg">
+          <div>
+            <h2>Viva ao Máximo por 10:</h2>
+            <h3>Desfrute de Grandes Compras com Pouco Dinheiro!</h3>
+            <button class="btn-purple">Conheça nossa loja</button>
+          </div>
+        </div>
+      </section>
+      <section class="sobre-nos">
+        <div class="missao">
+          <div class="title">
+            <i class="bx bxs-heart"></i>
+            <h2 class="h2-section">BEM-VINDO ÀS LOJAS P10</h2>
+          </div>
+          <p>
+            Fundada pelo Dr. Eduardo da Silva, as lojas P10 oferecem uma ampla
+            variedade de produtos, desde itens de decoração e acessórios até
+            utensílios domésticos e presentes criativos. Com preços acessíveis e
+            produtos de qualidade, as lojas P10 rapidamente conquistaram o
+            coração dos clientes que buscavam pechinchas, sem abrir mão da
+            qualidade. Um destino popular para quem deseja encontrar ótimas
+            ofertas e fazer compras econômicas.
+          </p>
+          <div class="content" id="cardContainer">
+            <div class="card card-direita visible">
+              <div class="header">
+                <i class="bx bx-street-view"></i>
 
-        <nav>
-            <img class="logo" src="./assets/img/logo/LojasP10/logo-menor.png" alt="">
-            <input type="checkbox" id="click" />
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul class="center">
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="#">Nosso app</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Localização</a></li>
-            </ul>
-            <ul>
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-            </ul>
-
-        </nav>
-        <main>
-            <img class="cell-phone" src="./assets/img/cell.png" alt>
-            <section class="hero">
-                <div class="square"></div>
-                <div class="diagonal-hero-bg">
-                    <div>
-                        <h2>Viva ao Máximo por 10:</h2>
-                        <h3>Desfrute de Grandes Compras com Pouco Dinheiro!</h3>
-                        <button>Conheça nossa loja</button>
-                    </div>
-                </div>
-            </section>
-            <section class="sobre-nos">
-                <div class="missao" >
-                    <h2 class="h2-section">BEM-VINDO ÀS LOJAS P10</h2>
-                    <p>Fundada pelo Dr. Eduardo da Silva, as lojas P10 oferecem uma ampla variedade de produtos, desde itens de decoração e acessórios até utensílios domésticos e presentes criativos. Com preços acessíveis e produtos de qualidade, as lojas P10 rapidamente conquistaram o coração dos clientes que buscavam pechinchas, sem abrir mão da qualidade. Um destino popular para quem deseja encontrar ótimas ofertas e fazer compras econômicas.</p>
-                    <div class="content" id="cardContainer">
-                        <div class="card card-direita visible">
-                            <div class="header">
-                                <i class='bx bx-street-view' ></i>
-
-                                <h3>Missão</h3>
-                            </div>
-                            <p>Nossa missão é proporcionar aos nossos clientes uma experiência de compra excepcional, oferecendo uma ampla variedade de produtos de qualidade a preços acessíveis. Estamos comprometidos em superar as expectativas dos clientes e em tornar as Lojas P10 o destino número um para compras econômicas e produtos incríveis.</p>
-                        </div>
-                        <div class="card card-direita visible">
-                            <div class="header">
-                                <i class='bx bx-bullseye' ></i>
-                                <h3>Foco</h3>
-                            </div>
-                            <p>O foco das Lojas P10 é atender às necessidades de nossos clientes, garantindo que eles encontrem exatamente o que procuram. Buscamos constantemente aperfeiçoar nossos processos, aprimorar nossa seleção de produtos e proporcionar um ambiente de compras agradável e acolhedor.</p>
-                        </div>
-                        <div class="card card-esquerda visible">
-                            <div class="header">
-                                <i class='bx bx-coin' ></i>
-                                <h3>Valores</h3>
-    
-                            </div>
-                            <p>Nossos valores fundamentais incluem integridade, qualidade, acessibilidade e inovação. Acreditamos na importância de oferecer produtos de alta qualidade a preços que se encaixam no orçamento de todos. Valorizamos a confiança de nossos clientes e estamos comprometidos em ser uma loja que eles possam sempre contar.</p>
-                        </div>
-                        <div class="card card-esquerda visible">
-                            <div class="header">
-    
-                                <i class='bx bx-store'></i>
-                                <h3>Objetivo</h3>
-                            </div>
-                            <p>Nosso principal objetivo é ser a primeira escolha de compras para todos os clientes que buscam produtos de qualidade a preços excelentes. Queremos expandir nossa presença e continuar a encantar nossos clientes com ofertas incríveis, variedade de produtos e um atendimento excepcional.</p>
-                        </div>
-                    </div>
-                    <div class="content" id="cardContainer">
-                    </div>
-                </div>
-            </section>
-            <section class="promocoes">
-                <h2 class="h2-section">CONHEÇA NOSSAS PROMOÇÕES</h2>
-                    <div class="promocoes-content">
-                        <div class="card">
-                            <div class="content">
-                              <p class="text-1">
-                                Run with the pack
-                              </p>
-                              <div class="text-2">
-                                <span>
-                                  20% de desconto
-                                </span>
-                                <span>On your next order over $100</span>
-                              </div>
-                          
-                             
-                          
-                              <p class="date">
-                                Valido até o final do mês *
-                              </p>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="content">
-                              <p class="text-1">
-                                Run with the pack
-                              </p>
-                          
-                              <div class="text-2">
-                                <span>
-                                    24% de desconto
-                                </span>
-                                <span>On your next order over $100</span>
-                              </div>
-                          
-                             
-                          
-                              <p class="date">
-                                Valido até o final do mês *
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <div class="content">
-                              <p class="text-1">
-                                Run with the pack
-                              </p>
-                          
-                              <div class="text-2">
-                                <span>
-                                    60% de desconto
-                                </span>
-                                <span>On your next order over $100</span>
-                              </div>
-                          
-                             
-                          
-                              <p class="date">
-                                Valido até o final do mês *
-                              </p>
-                            </div>
-                          </div>
-                    </div>
-            </section>
-            <section class="tutorial">
-                <h1>Como começar</h1>
-                <div class="passos">
-                    <div class="cada-passo">
-                        <h2>1</h2>
-                        <p>
-                            <span>
-                                Abra sua conta
-                            </span> <br />
-                            Para ser elegível para esta promoção, abra sua conta
-                            utilizando o código promocional FWB200,
-                            selecione pelo menos uma forma de comunicação em
-                            “Preferências de Marketing” e faça seu 1º
-                            depósito.
-                        </p>
-                    </div>
-                    <div class="cada-passo">
-                        <h2>2</h2>
-                        <p>
-                            <span>
-                                Faça sua 1ª aposta
-                            </span><br />
-                            Faça sua primeira aposta de R$ 10 ou mais na BETFREG
-                            Exchange com cotação mínima de 1.5 em
-                            qualquer
-                            evento. Atenção, ao fazer uma aposta "contra" no
-                            mesmo evento, você não estará elegível para a
-                            promoção.
-                        </p>
-                    </div>
-                    <div class="cada-passo">
-                        <h2>3</h1>
-                        <p>
-                            <span>
-                                Receba seu bônus
-                            </span><br />
-                            Se sua primeira aposta qualificativa cumprir os
-                            requisitos e não for vencedora, você receberá o
-                            valor apostado até R$ 200 em apostas grátis na
-                            BETFREG Exchange válido por 30 dias.
-                        </p>
-                    </div>
-                </div>
-                <button class="glow-on-hover" id="comecar" type="button">
-                    <a href="#">Partiu apostar!</a>
-                </button>
-            </section>
-            <section class="termos">
-                <h1>Termos e Condições</h1>
-                <div class="termo-flex">
-                    <div class="termo-parte">
-                        <h2>
-                            Por que a BETFREG?
-                        </h2>
-                        <p>
-                            Presente no mercado desde o ano 2000, está listada
-                            na bolsa de Londres e faz parte do grupo
-                            Flutter
-                            Entertainment (o maior grupo de apostas online do
-                            mundo).
-                            Mais 18 milhões de clientes ao redor do mundo
-                            confiam em nossas marcas.
-                            Fomos a primeira empresa do setor a oferecer
-                            produtos exclusivos aos nossos clientes como o
-                            Exchange (a
-                            maior bolsa esportiva do mundo), o Cash Out (função
-                            que permite encerrar suas apostas a qualquer
-                            momento) e o Segure essa Bolada (um produto
-                            exclusivo BETFREG onde tudo o que tem de fazer é
-                            segurar
-                            seus ganhos).
-                        </p>
-                        <h2>
-                            Quem pode participar desta promoção?
-                        </h2>
-                        <p>
-                            Oferta exclusiva para novos clientes que residem no
-                            Brasil;
-                            Ao abrir a sua conta, você deverá usar o Código
-                            Promocional FWB200.
-                            Por favor, note que os métodos de pagamento
-                            AstroPayPrepaid e AstropayTEF não serão elegíveis
-                            para serem
-                            utilizados no primeiro depósito com esta oferta de
-                            boas-vindas.
-                            Nota importante: você precisará concluir a
-                            verificação de identidade e fornecer um comprovante
-                            de
-                            endereço válido antes de fazer sua primeira aposta.
-                            Qualquer conta que não tenha concluído a
-                            verificação
-                            de identidade antes da primeira aposta não será
-                            elegível para esta promoção.
-                            Como participar desta promoção?
-                            Abra sua conta com o código promocional "FWB200" e
-                            efetue seu primeiro depósito.
-                            A sua primeira aposta tem de ser efetuada no
-                            Exchange até 30 dias depois do cadastro da conta
-                            BETFREG e
-                            a aposta mínima tem de ser R$ 10. Esta aposta deverá
-                            ser saldada dentro do mesmo período, ou
-                            seja, 30
-                            dias.
-                            Se apostar menos de R$ 10 na primeira aposta no
-                            Exchange, você não poderá beneficiar desta
-                            promoção. O
-                            bônus da oferta apenas será pago se a sua primeira
-                            aposta de R$ 10 ou mais for não for
-                            vencedora.
-                            Durante a sua primeira aposta qualificativa, você
-                            não poderá encerrar a aposta utilizando o
-                            serviço de
-                            Cash Out e a cotação mínima deverá ser igual ou
-                            superior a 1.5.
-                            Sua aposta de qualificação será anulada caso você
-                            coloque qualquer outra aposta no mesmo evento
-                            ou
-                            mercado antes desta ser liquidada.
-                            Apostas não correspondidas, não resolvidas ou
-                            anuladas não serão consideradas válidas para esta
-                            promoção.
-                        </p>
-                    </div>
-                    <div class="termo-parte">
-                        <h2>
-                            O que eu posso ganhar?
-                        </h2>
-                        <p>
-                            Caso sua primeira aposta de R$ 10 ou mais na BETFREG
-                            Exchange não seja vencedora, você receberá
-                            um bônus
-                            em apostas grátis do mesmo valor de sua primeira
-                            aposta até R$ 200.
-                            O bônus em apostas grátis é válida apenas para a
-                            BETFREG Exchange e deverá ser utilizado dentro
-                            de 30
-                            dias.
-                            No caso da primeira aposta elegível no BETFREG
-                            Exchange ser vencedora, não haverá qualquer
-                            crédito de
-                            apostas grátis em sua conta.
-                            No caso de serem efetuadas duas apostas em
-                            simultâneo, a primeira aposta saldada será a aposta
-                            elegível.
-                            O valor do bônus recebido caso a sua primeira aposta
-                            não seja vencedora poderá ser repartido por
-                            várias
-                            apostas, ou seja, você não precisará apostar a
-                            totalidade do bônus recebido em uma só aposta.
-                            O valor apostado não será retornado, somente os seus
-                            lucros em cada aposta.
-                        </p>
-                        <h2>
-                            Quando eu receberei o meu bônus?
-                        </h2>
-                        <p>
-                            O bônus será creditado em sua carteira de bônus
-                            dentro de 48 horas após a aposta qualificativa
-                            ter sido
-                            resolvida. Este bônus em aposta grátis é para uso
-                            exclusivo na BETFREG Exchange, com cotações
-                            mínimas de
-                            1.5, e será válida por 30 dias. Lembre-se que você
-                            só receberá o bônus caso sua aposta
-                            qualificativa não
-                            for vencedora.
-                            Aplicam-se os T&C gerais da BETFREG.
-                        </p>
-                        <div class="div-gremio">
-                            <h5>
-                                Patrocinador Oficial
-                            </h5>
-                            <img class="gremio"
-                                src="/img/gremio-logo-escudo.png" alt>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="row">
-            <div class="links column">
-                <div class="column">
-                    <div id="logo-responsiva-meio" class="logo">
-                        <h1>REDES DO <span>ADAMÔ</span></h1>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <a href="#">FAQ</a>
-                            <a href="#">Serviços</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Contato</a>
-                        </div>
-                        <div class="column">
-                            <a href="#">Sobre Nós</a>
-                            <a href="#">Clientes</a>
-                            <a href="#">Política de Privacidade</a>
-                            <a href="#">Termos de Serviço</a>
-                        </div>
-                        <div class="column">
-                            <a href="#">Parcerias</a>
-                            <a href="#">Lançamento</a>
-                            <a href="#">Eventos</a>
-                            <a href="#">Tendências</a>
-                        </div>
-                    </div>
-                </div>
+                <h3>Missão</h3>
+              </div>
+              <p>
+                A nossa missão é oferecer aos clientes uma excepcional
+                experiência de compra, fornecendo uma ampla variedade de
+                produtos de qualidade a preços acessíveis.
+              </p>
             </div>
-            <div class="contato column">
-                <div class="contato-container column">
-                    <h3>Entre em contato</h3>
-                    <p>
-                        Compartilhe seu endereço de e-mail para que possamos
-                        entrar em contato e ajudar no que você precisa.
-                    </p>
-                    <div class="search-container" id="search">
-                        <input
-                            type="email"
-                            id="input-search"
-                            placeholder="adamo.dalberto@email.com"
-                            autocomplete="off" />
-                        <div>
-                            <button>
-                                ENVIAR
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="card card-direita visible">
+              <div class="header">
+                <i class="bx bx-bullseye"></i>
+                <h3>Foco</h3>
+              </div>
+              <p>
+                O foco das Lojas P10 é atender às necessidades de nossos
+                clientes, garantindo que eles encontrem exatamente o que
+                procuram. Buscamos constantemente aperfeiçoar nossos processos,
+                aprimorar nossa seleção de produtos e proporcionar um ambiente
+                de compras agradável e acolhedor.
+              </p>
             </div>
-        </footer>
-        <script src="./script.js"></script>
-    </body>
-
+            <div class="card card-esquerda visible">
+              <div class="header">
+                <i class="bx bx-coin"></i>
+                <h3>Valores</h3>
+              </div>
+              <p>
+                Nossos valores fundamentais incluem integridade, qualidade,
+                acessibilidade e inovação. Acreditamos na importância de
+                oferecer produtos de alta qualidade a preços que se encaixam no
+                orçamento de todos.
+              </p>
+            </div>
+          </div>
+          <div class="content" id="cardContainer"></div>
+        </div>
+      </section>
+      <section class="promocoes">
+        <div class="title">
+          <i class="bx bxs-coupon"> </i>
+          <h2 class="h2-section">CONHEÇA NOSSAS PROMOÇÕES</h2>
+        </div>
+        <div class="content">
+          <div class="plan">
+            <div class="inner">
+              <h3 class="title">Natal Reluzente</h3>
+              <p class="info">
+                Faça suas compras de Natal com nossos Descontos Reluzentes!
+                Descontos especiais em presentes, decorações e tudo que você
+                precisa para a temporada festiva.
+              </p>
+              <div class="image">
+                <img src="./assets/img/qrCode.png" />
+              </div>
+              <button class="btn-green" href="#">
+                <i class="bx bx-down-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="inner">
+              <h3 class="title">Surpresa de Descontos Escondidos</h3>
+              <p class="info">
+                Surpreenda-se com nossos descontos escondidos! Cada compra
+                esconde um desconto de 10% a 35%. Quanto você vai economizar
+                hoje?
+              </p>
+              <div class="image">
+                <img src="./assets/img/qrCode.png" />
+              </div>
+              <button class="btn-green" href="#">
+                <i class="bx bx-down-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="inner">
+              <h3 class="title">Verão de Descontos Escaldantes</h3>
+              <p class="info">
+                Sinta o calor do verão com nossos descontos escaldantes! Desde
+                roupas de praia até eletrodomésticos para manter sua casa
+                fresca, nós temos descontos quentes para você!
+              </p>
+              <div class="image">
+                <img src="./assets/img/qrCode.png" />
+              </div>
+              <button class="btn-green" href="#">
+                <i class="bx bx-down-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="app">
+        <div class="title">
+          <i class="bx bxs-coupon"> </i>
+          <h2 class="h2-section">NOSSO APP</h2>
+        </div>
+        <div class="content">
+          <div class="download">
+            <p>
+              Explore uma experiência de compra totalmente nova baixando nosso
+              aplicativo exclusivo das Lojas P10. Com nosso aplicativo, você
+              terá acesso a ofertas exclusivas, descontos especiais e uma ampla
+              variedade de produtos, tudo na ponta dos seus dedos. Não perca a
+              oportunidade de economizar e descobrir as últimas tendências em
+              compras
+            </p>
+            <h3>
+              Baixe agora o nosso aplicativo e comece a desfrutar de uma
+              experiência de compra ainda melhor nas Lojas P10
+            </h3>
+            <button class="btn-green">
+              Clique aqui para começar essa aventura
+            </button>
+          </div>
+          <img src="./assets/img/mao_celular.png" alt="" />
+        </div>
+      </section>
+      <section class="faq">
+        <div class="title">
+          <i class="bx bxs-coupon"> </i>
+          <h2 class="h2-section">FAQ</h2>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>Como faço para fazer um pedido?</h3>
+            <div class="icon-container">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Fazer um pedido é fácil! Basta navegar pela nossa seleção de
+              produtos, adicionar os itens desejados ao carrinho e seguir o
+              processo de checkout.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>
+              Quais métodos de pagamento são aceitos?
+            </h3>
+            <div class="icon-container">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Aceitamos cartões de crédito, PayPal e outros métodos de pagamento
+              online seguros. As opções de pagamento serão apresentadas durante
+              o checkout.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Qual é a política de devolução?
+            </h3>
+            <div class="icon-container">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Temos uma política de devolução de 30 dias. Se você não estiver satisfeito com o seu pedido, entre em contato conosco e forneceremos instruções para a devolução e o reembolso
+            </p>
+          </div>
+        </div>
+        <div class="contato">
+          <span>Sua dúvida não está aqui? <a>Entre em contato</a></span>
+        </div>
+      </section>
+    </main>
+    <footer class="row">
+      <div class="links column">
+        <div class="column">
+          <div id="logo-responsiva-meio" class="logo">
+            <h1>REDES DO <span>ADAMÔ</span></h1>
+          </div>
+          <div class="row">
+            <div class="column">
+              <a href="#">FAQ</a>
+              <a href="#">Serviços</a>
+              <a href="#">Blog</a>
+              <a href="#">Contato</a>
+            </div>
+            <div class="column">
+              <a href="#">Sobre Nós</a>
+              <a href="#">Clientes</a>
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos de Serviço</a>
+            </div>
+            <div class="column">
+              <a href="#">Parcerias</a>
+              <a href="#">Lançamento</a>
+              <a href="#">Eventos</a>
+              <a href="#">Tendências</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contato column">
+        <div class="contato-container column">
+          <h3>Entre em contato</h3>
+          <p>
+            Compartilhe seu endereço de e-mail para que possamos entrar em
+            contato e ajudar no que você precisa.
+          </p>
+          <div class="search-container" id="search">
+            <input
+              type="email"
+              id="input-search"
+              placeholder="adamo.dalberto@email.com"
+              autocomplete="off"
+            />
+            <div>
+              <button>ENVIAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
