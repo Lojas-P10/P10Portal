@@ -19,11 +19,35 @@ body {
 main {
   overflow: hidden;
 }
-p,
+/* p,
 span {
-  font-size: 1.3em;
+  font-size: 1.3vw;
+} */
+h1 {
+  font-size: 3.125rem;
 }
 
+h2 {
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+
+h3 {
+  /* font-size: 1.6em; */
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
 .promocoes .content {
   display: flex;
   justify-content: space-between;
@@ -103,7 +127,7 @@ button {
 }
 
 .app img {
-  margin-top: -10em;
+  margin-top: -16em;
   width: 38em;
 }
 
@@ -171,10 +195,10 @@ button {
 }
 .cell-phone {
   position: absolute;
-  right: 4%;
+  right: -11%;
   z-index: 99;
-  top: 25%;
-  width: 29em;
+  top: 19%;
+  width: 53em;
 }
 .square {
   width: 58em;
@@ -195,6 +219,7 @@ button {
   width: 100%;
   height: 100vh;
   padding: 0;
+  margin-bottom: 2em;
   position: relative;
 }
 
@@ -202,7 +227,6 @@ button {
   margin-top: 2em;
   width: fit-content;
 }
-
 section {
   padding: 8em 10em;
   background-color: #fff;
@@ -215,10 +239,10 @@ section {
   height: 129vh;
   justify-content: center;
 }
-.h2-section {
-  font-size: 2.5em;
+/* .h2-section {
+  font-size: 3vw;
 }
-
+ */
 .sobre-nos .card {
   height: max-content;
   border-radius: 10px;
@@ -245,9 +269,13 @@ section {
   margin-bottom: 1em;
   text-align: start;
 }
-h3 {
-  font-size: 1.5rem;
+
+/* h3 {
+  font-size: 1.65vw;
 }
+h4 {
+  font-size: 1.5vw;
+} */
 .sobre-nos .card h3 {
   color: #448857;
 }
@@ -261,12 +289,18 @@ h3 {
   width: fit-content;
   border-radius: 10px;
 }
+.hero button {
+  margin-top: 1em
+}
 .diagonal-hero-bg {
   width: 100%;
   height: 100%;
   padding: 5em;
-  background: #d8f9e1;
-  z-index: -1;
+  background: url(../img/fundo.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: brightness(0.5);
+  background-position: center;
   display: flex;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   align-items: center;
@@ -294,28 +328,30 @@ h3 {
 }
 .faq .contato a:hover {
   text-decoration: none;
-  cursor: pointer
+  cursor: pointer;
 }
-.nav .center {
+nav .center {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
 }
 
-.diagonal-hero-bg img {
+.hero .content img {
   width: 27em;
+}
+.hero .content {
+  position: absolute;
+  top: 36%;
+  left: 5%;
 }
 
 nav .bx {
-  font-size: 2em;
+  font-size: 3vw;
 }
 
-.diagonal-hero-bg h2 {
-  font-size: 4em;
+.hero .content h1,  .hero .content h2{
+  color: white;
 }
 
-.diagonal-hero-bg h3 {
-  font-size: 2em;
-}
 .title i {
   color: white;
   background-color: #6938ca;
@@ -329,8 +365,9 @@ nav .bx {
   margin-bottom: 1em;
   align-items: center;
 }
-.promocoes {
-  background-color: #d8f9e1;
+.promocoes,
+.faq {
+  background-color: #ecf0ff;
 }
 .promocoes .card {
   overflow: hidden;
@@ -347,15 +384,13 @@ nav {
   z-index: 100;
   align-items: center;
   position: fixed;
-  transition: box-shadow 0.3s;
-  transition: height 0.3s;
-  transition: background 0.3s;
+  height: 11em;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 nav .logo {
-  transition: width 0.3s;
+  width: 11em;
 }
 
 nav ul {
@@ -369,17 +404,17 @@ nav ul li {
   margin: 0 5px;
 }
 
-nav ul li a {
-  color: #2c2c2b;
+nav ul li .nav-links {
   text-decoration: none;
-  font-size: 18px;
+/*   font-size: 1.5vw; */
+  color: white;
   font-weight: 500;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
+nav ul li .nav-links.active,
+nav ul li .nav-links:focus nav ul li .nav-links:hover {
   color: #4cd372;
 }
 
@@ -387,10 +422,9 @@ h1 {
   font-weight: bold;
 }
 
-
 nav .menu-btn i {
-  color: #fff;
-  font-size: 22px;
+  color: #2c2c2b;
+  font-size: 2em;
   cursor: pointer;
   display: none;
 }
@@ -398,27 +432,95 @@ nav .menu-btn i {
 input[type="checkbox"] {
   display: none;
 }
-nav .menu-btn {
-  position: absolute;
+.faq {
+  padding: 12em 10em;
 }
-
-#logo-responsiva {
-  display: none;
-}
-
 .search-container {
-  background-color: white;
   display: flex;
   width: 100%;
+  background-color: #f8f8f8;
   align-items: center;
   border-radius: 10px;
 }
+input:focus,
+input:hover {
+  outline: none;
+  border-color: #4133b7;
+  background-color: #fff;
+  box-shadow: 0 0 0 5px #4033b76d;
+}
+form {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  width: 40%;
+}
 
-input {
+.inputGroup {
+  margin: 1.5em 0;
+  position: relative;
+}
+
+.inputGroup input,
+textarea {
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label,
+.inputGroup :is(textarea:focus, textarea:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #fff;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer input {
   border-radius: 10px;
   outline: 0;
   border: 0;
   padding: 0.6em;
+  background-color: #f8f8f8;
+
   width: 100%;
 }
 
@@ -428,16 +530,16 @@ footer button {
 }
 
 footer {
-  background-color: black;
+  background-color: #fff;
   width: 100%;
-  padding: 5em 2em;
-  gap: 5em;
-  color: white;
-  justify-content: center;
+  gap: 3em;
+  padding-right: 2em;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer a {
-  color: white;
+  color: #2c2c2b;
   text-decoration: none;
   width: fit-content;
 }
@@ -447,11 +549,12 @@ footer a:hover {
 }
 
 footer .logo {
+  width: 10em;
   margin-bottom: 1em;
 }
 
 footer .contato {
-  width: 30em;
+  width: 40%;
 }
 
 footer .contato-container {
@@ -500,10 +603,104 @@ footer .links {
 ::-webkit-scrollbar-thumb:hover {
   background: #4cd372;
 }
+@media (max-width: 1272px) {
+  /*   .sobre-nos {
+    padding: 32em 10em;
+  } */
+  .app img {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  footer .links .column .row {
+    display: none;
+  }
+/*   p,
+  span {
+    font-size: 1.8vw;
+  }
+  h3 {
+    font-size: 2vw;
+  } */
+  /*   .sobre-nos {
+    padding: 40em 3em;
+  } */
+  section,
+  .faq {
+    padding: 11em 3em;
+  }
 
-@media (max-width: 920px) {
   nav .menu-btn i {
     display: block;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 2.5em;
+    background: #fff;
+    height: 6em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .square:nth-child(1) {
+    display: none;
+  }
+  nav ul li .nav-links {
+    transition: none
+  }
+  nav ul {
+    z-index: 5;
+    position: absolute;
+    background-color: white;;
+    top: 6em;
+    right: -100%;
+    width: 36%;
+    height: 100vh;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+  }
+
+  #click:checked ~ ul {
+    right: 0;
+  }
+  .center {
+    flex-direction: column;
+  }
+  .redes {
+    display: none;
+  }
+  .redes i {
+    font-size: 2em;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  nav ul li .nav-links {
+    width: 100%;
+    color: #2c2c2b;
+    margin-right: -100%;
+    display: block;
+    font-size: 20px;
+  }
+
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 920px) {
+  footer {
+    gap: 1em;
+  }
+  footer .logo {
+    display: none;
+  }
+  footer .contato {
+    width: 70%;
   }
 
   #logo-responsiva {
@@ -513,56 +710,102 @@ footer .links {
   #logo-responsiva-meio {
     display: none;
   }
+}
 
-  nav {
-    justify-content: space-around;
-    padding: 0;
+@media (max-width: 900px) {
+  .hero {
+    margin-bottom: 5em
   }
-
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
-
-  nav ul {
-    z-index: 5;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    background: rgb(15, 15, 15);
+}
+@media (max-width: 875px) {
+  .sobre-nos .card {
     width: 100%;
-    border-radius: 0 0 20px 20px;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
   }
-
-  #click:checked ~ ul {
-    left: 0;
+  .promocoes {
+    margin-top: 8em;
   }
-
-  nav ul li {
+  .promocoes .content {
+    flex-wrap: wrap;
+  }
+  .promocoes .plan {
+    width: 48%;
+  }
+  .promocoes .plan:nth-child(3) {
     width: 100%;
-    margin: 40px 0;
+    margin-top: 1em;
   }
-
-  nav ul li a {
+  footer .contato {
     width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-
-  #click:checked ~ ul li a {
-    margin-left: 0px;
+}
+@media (max-width: 768px) {
+  .promocoes .content {
+    flex-direction: column;
   }
-
-  nav ul li a.active,
-  nav ul li a:hover {
-    background: none;
-    color: cyan;
+  .promocoes .plan {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .hero {
+    margin-bottom: 8em
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 615px) {
+  footer {
+    padding: 0;
+    overflow: hidden;
+  }
+  form {
+    width: 90%;
+  }
+  nav ul {
+    width: 60%
+  }
+  section, .faq {
+    padding: 6em 1em;
+}
+  footer .contato {
+    padding: 2em;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2 {
+    font-size: 1.588rem;
+    font-weight: 700;
+  }
+  html {
+    scroll-padding-top: 3em;
+  }
+
+  h3 {
+    /* font-size: 1.6em; */
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.15em;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    margin-bottom: 10em
+  }
 }

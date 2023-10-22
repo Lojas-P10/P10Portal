@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="icon"
+      href="./assets/img/logo/LojasP10/favicon_transparent_32x32.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -20,23 +23,24 @@
 
   <body>
     <nav>
-      <img
-        class="logo"
-        src="./assets/img/logo/LojasP10/logo-menor.png"
-        alt=""
-      />
+      <a href="#home">
+        <img
+          class="logo"
+          src="./assets/img/logo/LojasP10/logo-menor-nome.png"
+          alt="Logo das lojas P10"
+        />
+      </a>
       <input type="checkbox" id="click" />
       <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
       <ul class="center">
-        <li><a href="#">Sobre nós</a></li>
-        <li><a href="#">Promoções</a></li>
-        <li><a href="#">Nosso app</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Localização</a></li>
+        <li><a class="nav-links" href="/#sobre-nos">Sobre nós</a></li>
+        <li><a class="nav-links" href="/#promocoes">Promoções</a></li>
+        <li><a class="nav-links" href="/#app">Nosso app</a></li>
+        <li><a class="nav-links" href="/#faq">FAQ</a></li>
       </ul>
-      <ul>
+      <ul class="redes">
         <li>
           <a href="#"><i class="bx bxl-instagram"></i></a>
         </li>
@@ -49,18 +53,18 @@
       </ul>
     </nav>
     <main>
-      <img class="cell-phone" src="./assets/img/cell.png" alt />
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="square"></div>
-        <div class="diagonal-hero-bg">
-          <div>
-            <h2>Viva ao Máximo por 10:</h2>
-            <h3>Desfrute de Grandes Compras com Pouco Dinheiro!</h3>
+        <div class="diagonal-hero-bg"></div>
+        <div class="content">
+          <h1>Viva ao Máximo por 10:</h1>
+          <h2>Desfrute de Grandes Compras com Pouco Dinheiro!</h2>
+          <a href="/#sobre-nos">
             <button class="btn-purple">Conheça nossa loja</button>
-          </div>
+          </a>
         </div>
       </section>
-      <section class="sobre-nos">
+      <section class="sobre-nos" id="sobre-nos">
         <div class="missao">
           <div class="title">
             <i class="bx bxs-heart"></i>
@@ -114,10 +118,9 @@
               </p>
             </div>
           </div>
-          <div class="content" id="cardContainer"></div>
         </div>
       </section>
-      <section class="promocoes">
+      <section class="promocoes" id="promocoes">
         <div class="title">
           <i class="bx bxs-coupon"> </i>
           <h2 class="h2-section">CONHEÇA NOSSAS PROMOÇÕES</h2>
@@ -134,9 +137,6 @@
               <div class="image">
                 <img src="./assets/img/qrCode.png" />
               </div>
-              <button class="btn-green" href="#">
-                <i class="bx bx-down-arrow-alt"></i>
-              </button>
             </div>
           </div>
           <div class="plan">
@@ -150,9 +150,6 @@
               <div class="image">
                 <img src="./assets/img/qrCode.png" />
               </div>
-              <button class="btn-green" href="#">
-                <i class="bx bx-down-arrow-alt"></i>
-              </button>
             </div>
           </div>
           <div class="plan">
@@ -166,16 +163,13 @@
               <div class="image">
                 <img src="./assets/img/qrCode.png" />
               </div>
-              <button class="btn-green" href="#">
-                <i class="bx bx-down-arrow-alt"></i>
-              </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="app">
+      <section class="app" id="app">
         <div class="title">
-          <i class="bx bxs-coupon"> </i>
+          <i class="bx bxs-file-archive"></i>
           <h2 class="h2-section">NOSSO APP</h2>
         </div>
         <div class="content">
@@ -192,21 +186,26 @@
               Baixe agora o nosso aplicativo e comece a desfrutar de uma
               experiência de compra ainda melhor nas Lojas P10
             </h3>
-            <button class="btn-green">
-              Clique aqui para começar essa aventura
-            </button>
+            <a href="./assets/template.pdf" download>
+              <button class="btn-green">
+                Clique aqui para começar essa aventura
+              </button>
+            </a>
           </div>
-          <img src="./assets/img/mao_celular.png" alt="" />
+          <img
+            src="./assets/img/mao_celular.png"
+            alt="Celular com o aplicativo das Lojas P10 aberto"
+          />
         </div>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="title">
-          <i class="bx bxs-coupon"> </i>
+          <i class="bx bx-support"></i>
           <h2 class="h2-section">FAQ</h2>
         </div>
         <div class="faq-container">
           <div class="faq-item">
-            <h3>Como faço para fazer um pedido?</h3>
+            <h4>Como faço para fazer um pedido?</h4>
             <div class="icon-container">
               <i class="fas fa-chevron-right"></i>
             </div>
@@ -219,9 +218,7 @@
             </p>
           </div>
           <div class="faq-item">
-            <h3>
-              Quais métodos de pagamento são aceitos?
-            </h3>
+            <h4>Quais métodos de pagamento são aceitos?</h4>
             <div class="icon-container">
               <i class="fas fa-chevron-right"></i>
             </div>
@@ -234,67 +231,98 @@
             </p>
           </div>
           <div class="faq-item">
-            <h3>Qual é a política de devolução?
-            </h3>
+            <h4>Qual é a política de devolução?</h4>
             <div class="icon-container">
               <i class="fas fa-chevron-right"></i>
             </div>
           </div>
           <div class="faq-answer">
             <p>
-              Temos uma política de devolução de 30 dias. Se você não estiver satisfeito com o seu pedido, entre em contato conosco e forneceremos instruções para a devolução e o reembolso
+              Temos uma política de devolução de 30 dias. Se você não estiver
+              satisfeito com o seu pedido, entre em contato conosco e
+              forneceremos instruções para a devolução e o reembolso
             </p>
           </div>
         </div>
         <div class="contato">
-          <span>Sua dúvida não está aqui? <a>Entre em contato</a></span>
+          <span
+            >Sua dúvida não está aqui?
+            <a id="openModal">Entre em contato</a></span
+          >
+        </div>
+        <div id="myModal" class="modal">
+          <form class="form" class="modal-content">
+            <div class="inputGroup">
+              <input autocomplete="off" required type="text" />
+              <label for="name">Nome completo</label>
+            </div>
+
+            <div class="inputGroup">
+              <input autocomplete="off" required type="email" />
+              <label for="name">Email</label>
+            </div>
+
+            <div class="inputGroup">
+              <input autocomplete="off" required type="tel" />
+              <label for="name">Telefone</label>
+            </div>
+            <div class="inputGroup">
+              <textarea required rows="3" placeholder></textarea>
+              <label for="name">Sua mensagem:</label>
+            </div>
+
+            <button class="btn-green" href="#">ENVIAR</button>
+          </form>
         </div>
       </section>
     </main>
     <footer class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.8822219223816!2d-48.74088992520311!3d-26.394992476959526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb5609af7afc5%3A0x34c75ce16022aa6a!2sInstituto%20Federal%20Catarinense%20Campus%20Araquari!5e0!3m2!1spt-BR!2sbr!4v1697911202812!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       <div class="links column">
         <div class="column">
-          <div id="logo-responsiva-meio" class="logo">
-            <h1>REDES DO <span>ADAMÔ</span></h1>
-          </div>
+          <img
+            class="logo"
+            src="./assets/img/logo/LojasP10/logo-menor.png"
+            alt="Logo das Lojas P10"
+          />
           <div class="row">
             <div class="column">
-              <a href="#">FAQ</a>
-              <a href="#">Serviços</a>
-              <a href="#">Blog</a>
+              <a href="/#sobre-nos">Sobre Nós</a>
+              <a href="/#faq">FAQ</a>
+              <a href="/#promocoes">Promoções</a>
               <a href="#">Contato</a>
             </div>
             <div class="column">
-              <a href="#">Sobre Nós</a>
-              <a href="#">Clientes</a>
-              <a href="#">Política de Privacidade</a>
-              <a href="#">Termos de Serviço</a>
-            </div>
-            <div class="column">
-              <a href="#">Parcerias</a>
-              <a href="#">Lançamento</a>
-              <a href="#">Eventos</a>
-              <a href="#">Tendências</a>
+              <a href="/#app">Baixe o APP</a>
+              <a href="https://github.com/Lojas-P10">Desenvolvedores</a>
             </div>
           </div>
         </div>
       </div>
       <div class="contato column">
         <div class="contato-container column">
-          <h3>Entre em contato</h3>
+          <h3>Newsletter</h3>
           <p>
-            Compartilhe seu endereço de e-mail para que possamos entrar em
-            contato e ajudar no que você precisa.
+            Assine nossa newsletter e fique por dentro das nossas melhores
+            ofertas.
           </p>
           <div class="search-container" id="search">
             <input
               type="email"
               id="input-search"
-              placeholder="adamo.dalberto@email.com"
+              placeholder="eduardo.silva@ifc.edu.br"
               autocomplete="off"
             />
             <div>
-              <button>ENVIAR</button>
+              <button class="btn-green">ENVIAR</button>
             </div>
           </div>
         </div>
