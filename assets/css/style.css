@@ -290,7 +290,7 @@ h4 {
   border-radius: 10px;
 }
 .hero button {
-  margin-top: 1em
+  margin-top: 1em;
 }
 .diagonal-hero-bg {
   width: 100%;
@@ -348,7 +348,8 @@ nav .bx {
   font-size: 3vw;
 }
 
-.hero .content h1,  .hero .content h2{
+.hero .content h1,
+.hero .content h2 {
   color: white;
 }
 
@@ -406,7 +407,7 @@ nav ul li {
 
 nav ul li .nav-links {
   text-decoration: none;
-/*   font-size: 1.5vw; */
+  /*   font-size: 1.5vw; */
   color: white;
   font-weight: 500;
   letter-spacing: 1px;
@@ -615,7 +616,7 @@ footer .links {
   footer .links .column .row {
     display: none;
   }
-/*   p,
+  /*   p,
   span {
     font-size: 1.8vw;
   }
@@ -649,12 +650,12 @@ footer .links {
     display: none;
   }
   nav ul li .nav-links {
-    transition: none
+    transition: none;
   }
   nav ul {
     z-index: 5;
     position: absolute;
-    background-color: white;;
+    background-color: white;
     top: 6em;
     right: -100%;
     width: 36%;
@@ -714,7 +715,7 @@ footer .links {
 
 @media (max-width: 900px) {
   .hero {
-    margin-bottom: 5em
+    margin-bottom: 5em;
   }
 }
 @media (max-width: 875px) {
@@ -747,7 +748,7 @@ footer .links {
     margin-top: 1em;
   }
   .hero {
-    margin-bottom: 8em
+    margin-bottom: 8em;
   }
 }
 
@@ -760,13 +761,17 @@ footer .links {
     width: 90%;
   }
   nav ul {
-    width: 60%
+    width: 60%;
   }
-  section, .faq {
+  section,
+  .faq {
     padding: 6em 1em;
-}
+  }
   footer .contato {
     padding: 2em;
+  }
+  .hero {
+    margin-bottom: 13em;
   }
   .row {
     flex-direction: column-reverse;
@@ -806,6 +811,9 @@ footer .links {
 
 @media (max-width: 450px) {
   .hero {
-    margin-bottom: 10em
+    margin-bottom: 15em;
+  }
+  .promocoes {
+    margin-top: 18em;
   }
 }
